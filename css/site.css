@@ -15,9 +15,10 @@ a, .btn-link {
 }
 
 app {
-    position: relative;
+    /*position: relative;*/
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    height:100%;
 }
 
 .top-row {
