@@ -208,6 +208,32 @@ body, html {
 
 
 /*  intro section  */
+.columnSeparator {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .columnSeparator {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+#the90div {
+    font-size: 21px;
+}
+
+#thridRow {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#FirstRow {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 introImg {
     height: 300px;
 }
@@ -221,6 +247,7 @@ introImg {
 @media (min-width: 768px) {
     #the90div {
         height: 90%;
+        font-size: 16px;
     }
 }
 /*  End of intro section  */
