@@ -223,7 +223,7 @@ body, html {
     }
 }
 
-#the90div {
+.the90div {
     font-size: 21px;
 }
 
@@ -248,7 +248,7 @@ introImg {
 }
 
 @media (min-width: 768px) {
-    #the90div {
+    .the90div {
         height: 90%;
         font-size: 16px;
     }
@@ -273,9 +273,17 @@ introImg {
 
 /*  End of UserInput 1 section  */
 
+/*  UserInput 2 section  */
+#UserInput2 {
+    height: 100%;
+}
 
+    #UserInput2 #firstRow {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
 
-
+/*  End of UserInput 2 section  */
 
 
 /*.footer {
