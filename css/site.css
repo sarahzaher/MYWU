@@ -284,8 +284,44 @@ introImg {
     }
 
 /*  End of UserInput 2 section  */
+/*  model section  */
+#Model .MainImg {
+    height: 200px;
+}
 
+@media (min-width: 576px) {
+    #Model .MainImg {
+        height: 230px;
+    }
+}
 
+@media (min-width: 768px) {
+    #Model .MainImg {
+        height: 310px;
+    }
+}
+
+@media (min-width: 992px) {
+    #Model .MainImg {
+        height: 400px;
+    }
+}
+.btnoption {
+    height: 80px;
+}
+
+#Model #the90div {
+    height: 90%;
+}
+
+#Model {
+    height: 100%;
+}
+
+#userInput {
+    height: 100%;
+}
+/*  End of model section  */
 /*.footer {
     position: absolute;
     bottom: 0;
