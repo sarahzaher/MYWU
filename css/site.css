@@ -16,9 +16,8 @@ a, .btn-link {
 
 app {
     /*position: relative;*/
-    display: flex;
     /*flex-direction: column;*/
-    height:100%;
+    height: 100%;
 }
 
 .top-row {
@@ -42,10 +41,10 @@ app {
             margin-left: 1.5rem;
         }
 
-.main .top-row a:first-child {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+        .main .top-row a:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
 .sidebar {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
@@ -130,12 +129,12 @@ app {
     z-index: 1000;
 }
 
-#blazor-error-ui .dismiss {
-    cursor: pointer;
-    position: absolute;
-    right: 0.75rem;
-    top: 0.5rem;
-}
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
 
 @media (max-width: 767.98px) {
     .main .top-row:not(.auth) {
@@ -183,34 +182,115 @@ app {
     }
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
+
+
+
+
+
+
+
+
+
+
+
+/*Common*/
+Main {
+    overflow-y: auto;
 }
-.mainContainer {
-    height: 100%;
-    margin: 0;
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    min-height: 60px;
+    line-height: 8vh;
+    background-color: #f5f5f5;
 }
-.bg {
-    /* The image used */
-    /* Full height */
+
+#mainContent {
     height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-size: 21px;
 }
+
+@media (min-width: 768px) {
+    #mainContent {
+        height: 100%;
+        font-size: 16px;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+.BodyWithFooter {
+    height: 92vh;
+    /*max-height: 94vh;*/
+}
+
+.BodyWithoutFooter {
+    min-height: 100%;
+}
+
+
+
 .zoom2:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1);
     cursor: pointer;
 }
+
+.zoom2Perm {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .zoom:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    cursor:pointer;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.zoomPerm {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 
+
+/* Welcome Page  */
+
+#btnStart {
+    height: 90px;
+}
+
+
+
+
+
+
+
+/* End of welcome Page*/
 /*  intro section  */
+introImg {
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+    .introImg {
+        height: 170px;
+    }
+}
+
+#FirstRow {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#thridRow {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .columnSeparator {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -223,110 +303,64 @@ body, html {
     }
 }
 
-.the90div {
-    font-size: 21px;
-}
-
-#thridRow {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#FirstRow {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-introImg {
-    height: 300px;
-}
-
-@media (min-width: 768px) {
-    .introImg {
-        height: 200px;
-    }
-}
-
-@media (min-width: 768px) {
-    .the90div {
-        height: 90%;
-        font-size: 16px;
-    }
-}
 /*  End of intro section  */
 
-/*  UserInput 1 section  */
-#UserInput {
-    height: 100%;
+/*  UserInput Section  */
+#UserInput #firstRow {
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
-    #UserInput #firstRow {
-        margin-top: 50px;
-        margin-bottom: 10px;
-    }
-
 .userInputImg {
-    height: 200px;
+    height: 150px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-/*  End of UserInput 1 section  */
-
-/*  UserInput 2 section  */
-#UserInput2 {
-    height: 100%;
-}
-
-    #UserInput2 #firstRow {
-        margin-top: 50px;
-        margin-bottom: 10px;
-    }
-
-/*  End of UserInput 2 section  */
-/*  model section  */
-#Model .MainImg {
-    height: 200px;
-}
-
 @media (min-width: 576px) {
-    #Model .MainImg {
-        height: 230px;
+    .userInputImg {
+        height: 170px;
     }
 }
 
 @media (min-width: 768px) {
-    #Model .MainImg {
-        height: 310px;
+    .userInputImg {
+        height: 200px;
     }
 }
 
-@media (min-width: 992px) {
-    #Model .MainImg {
-        height: 400px;
+
+
+/*  End of UserInput section  */
+
+
+/* Room Selector */
+.modelContainer {
+}
+
+.btnRoomOption {
+    height: 70px;
+}
+
+@media (min-width: 576px) {
+    .btnRoomOption {
+        height: 75px;
     }
 }
-.btnoption {
-    height: 80px;
+
+@media (min-width: 768px) {
+    .btnRoomOption {
+        height: 80px;
+    }
 }
 
-#Model #the90div {
-    height: 90%;
+.RoomObj {
+    height: 200px;
 }
 
-#Model {
-    height: 100%;
+
+#CustomRooms .SelectedModelCountainer {
+    border: solid;
 }
 
-#userInput {
-    height: 100%;
-}
-/*  End of model section  */
-/*.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
-}*/
+/*  End of room selector */
