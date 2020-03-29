@@ -220,10 +220,15 @@ Main {
     height: 90px;
     /*min-height: 80px;*/
     line-height: 90px;
-    border-top: #e44d94 solid;
+    /*border-top: #e44d94 solid;*/
     /*background-color: #f5f5f5;*/
 }
 
+/*.btnOption2 {
+    font-weight: bold;
+    background-color: #e0c5d8;
+    font-style: inherit;
+}*/
 
 
 
@@ -332,12 +337,29 @@ introImg {
         height: 170px;
     }
 }
+.userInputOptions {
+    font-size: xx-large;
+    height: 120px;
+    width:120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+@media (min-width: 576px) {
+    .userInputOptions {
+        height: 150px;
+        width:150px;
+    }
+}
 
+@media (min-width: 768px) {
+    .userInputOptions {
+        height: 170px;
+        width:170px;
+    }
+}
 
 /*  End of UserInput section  */
-
-
 /* Room Selector */
 #CustomRooms .heading {
     height: 60px;
