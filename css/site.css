@@ -193,12 +193,12 @@ app {
 
 /*Common*/
 @font-face {
-    font-family: 'Tw Cen MT Condensed Extra Bold';
-    src: url('Content\font\TCCEB.ttf') format('truetype'), /* Safari, Android, iOS */
+    font-family: 'customFont';
+    src: url('../Content/font/TCCEB.TTF') format('truetype');
 }
 html, body {
     height: 100%;
-    font-family: 'Tw Cen MT Condensed Extra Bold';
+    font-family: customFont;
 }
 .BodyWithFooter {
     height: calc(100% - 90px);
