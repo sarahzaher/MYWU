@@ -230,7 +230,12 @@ Main {
     font-style: inherit;
 }*/
 
-
+/*
+    Color Ref:
+    Pink : #f49ac0
+    Blue : #6ea2d1
+    Orange: #f78c16
+*/
 
 .btnOption1 {
     font-weight: bold;
@@ -240,7 +245,24 @@ Main {
     font-style: inherit;
 }
 
-
+.LogoBlueBox {
+    background-color: #6ea2d1;
+    height: 69px;
+    width: 69px;
+    margin-left: 5px;
+}
+.LogoPinkBox {
+    background-color: #f49ac0;
+    height: 69px;
+    width: 69px;
+    margin-left: 5px;
+}
+.LogoOrangeBox {
+    background-color: #f78c16;
+    height: 69px;
+    width: 69px;
+    margin-left: 5px;
+}
 
 .zoom2:hover {
     transform: scale(1.1);
