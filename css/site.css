@@ -1,8 +1,6 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+
 
 a, .btn-link {
     color: #0366d6;
@@ -194,6 +192,23 @@ app {
 
 
 /*Common*/
+@font-face {
+    font-family: 'Tw Cen MT Condensed Extra Bold';
+    src: url('Content\font\TCCEB.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+html, body {
+    height: 100%;
+    font-family: 'Tw Cen MT Condensed Extra Bold';
+}
+.BodyWithFooter {
+    height: calc(100% - 90px);
+    /*max-height: 94vh;*/
+}
+
+.BodyWithoutFooter {
+    min-height: 100%;
+}
+
 Main {
     overflow-y: auto;
 }
@@ -202,35 +217,22 @@ Main {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
-    min-height: 60px;
-    line-height: 8vh;
-    background-color: #f5f5f5;
+    height: 90px;
+    /*min-height: 80px;*/
+    line-height: 90px;
+    border-top: #e44d94 solid;
+    /*background-color: #f5f5f5;*/
 }
 
-#mainContent {
-    height: 100%;
-    font-size: 21px;
-}
 
-@media (min-width: 768px) {
-    #mainContent {
-        height: 100%;
-        font-size: 16px;
-    }
-}
 
-html, body {
-    height: 100%;
-}
 
-.BodyWithFooter {
-    height: calc(100% - 60px);
-    /*max-height: 94vh;*/
-}
-
-.BodyWithoutFooter {
-    min-height: 100%;
+.btnOption1 {
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    background-color: #e0c5d8;
+    font-style: inherit;
 }
 
 
@@ -243,6 +245,7 @@ html, body {
 .zoom2Perm {
     transform: scale(1.1);
     cursor: pointer;
+    border: #e44d94 solid;
 }
 
 .zoom:hover {
@@ -253,6 +256,7 @@ html, body {
 .zoomPerm {
     transform: scale(1.2);
     cursor: pointer;
+    border: #e44d94 solid;
 }
 
 
@@ -312,20 +316,20 @@ introImg {
 }
 
 .userInputImg {
-    height: 150px;
+    height: 120px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 @media (min-width: 576px) {
     .userInputImg {
-        height: 170px;
+        height: 150px;
     }
 }
 
 @media (min-width: 768px) {
     .userInputImg {
-        height: 200px;
+        height: 170px;
     }
 }
 
@@ -382,7 +386,7 @@ introImg {
 
 
 #CustomRooms .SelectedModelCountainer {
-    border: solid;
+    border: #e44d94 solid;
 }
 
 /*  End of room selector */
