@@ -390,10 +390,14 @@ introImg {
 #CustomRooms .modelRow {
     /*height: 50%;*/
 }
-
+@media (min-width: 768px) {
+    #CustomRooms .modelRowWithOptions {
+        height: calc(50% - 30px);
+    }
+}
 @media (min-width: 768px) {
     #CustomRooms .modelRow {
-        height: calc(50% - 30px);
+        height: calc(50%);
     }
 }
 
