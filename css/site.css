@@ -208,7 +208,9 @@ html, body {
 .BodyWithoutFooter {
     min-height: 100%;
 }
-
+.BodyWithFooterAndNav {
+    height: calc(100% - 208px);
+}
 Main {
     overflow-y: auto;
 }
@@ -286,7 +288,72 @@ Main {
     border: #e44d94 solid;
 }
 
+/* NavBar*/
+.progress {
+    position: relative;
+    height: 25px;
+}
 
+    .progress > .progress-type {
+        position: absolute;
+        left: 0px;
+        font-weight: 800;
+        padding: 3px 30px 2px 10px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(25, 25, 25, 0.2);
+    }
+
+    .progress > .progress-completed {
+        position: absolute;
+        right: 0px;
+        font-weight: 800;
+        padding: 3px 10px 2px;
+    }
+
+.step {
+    text-align: center;
+}
+
+    .step .col-md-2 {
+        background-color: #fff;
+        border: 1px solid #C0C0C0;
+        border-right: none;
+    }
+
+        .step .col-md-2:last-child {
+            border: 1px solid #C0C0C0;
+        }
+
+        .step .col-md-2:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .step .col-md-2:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+
+        .step .col-md-2:hover {
+            color: #e44d94;
+            cursor: pointer;
+        }
+
+    .step .activestep {
+        color: #e44d94;
+        height: 100px;
+        margin-top: -7px;
+        padding-top: 7px;
+        border-left: 6px solid #6ea2d1 !important;
+        border-right: 6px solid #6ea2d1 !important;
+        border-top: 3px solid #6ea2d1 !important;
+        border-bottom: 3px solid #6ea2d1 !important;
+        vertical-align: central;
+    }
+
+    .step .fa {
+        padding-top: 15px;
+        font-size: 40px;
+    }
+/*  end of navbar     */
 
 /* Welcome Page  */
 
@@ -439,44 +506,72 @@ introImg {
 
 /*  End of room selector */
 /*Checkout*/
+@keyframes PriceAnimate {
+    0% {
+        transform: rotate(xx);
+        font-size: 0px;
+    }
+
+    100% {
+        transform: rotate(xx);
+        font-size: 80px;
+    }
+}
+
+#Price {
+    animation: PriceAnimate 1s 1 0s ease;
+}
+#Price {
+    font-size: 60px;
+}
+
+@media (min-width: 768px) {
+#Price {
+        height: 80px;
+    }
+}
 #Checkout img {
     height: 150px;
 }
-
-/**/
-
-/*Plan*/
-#PlanStatusLogo {
-    max-height: 150px;
-    /*width: 150px;*/
+@media (min-width: 768px) {
+    #Checkout img {
+        height: 200px;
+    }
 }
+    /**/
 
-#PlanImg {
-    max-height: 300px;
-}
+    /*Plan*/
+    #PlanStatusLogo {
+        max-height: 150px;
+        /*width: 150px;*/
+    }
 
-#PlanAnimation {
-    max-height: 400px;
-}
+    #PlanImg {
+        max-height: 300px;
+    }
 
-#AnimationContainer {
-    /*height: calc(50%);*/
-    /*max-height: calc(50%);*/
-}
+    #PlanAnimation {
+        max-height: 400px;
+    }
 
-#PlanContainer {
-    height: calc(100%);
-}
+    #AnimationContainer {
+        /*height: calc(50%);*/
+        /*max-height: calc(50%);*/
+    }
 
-#PlanOptStatus {
-    max-height: 150px;
-    /*width: 150px;*/
-}
+    #PlanContainer {
+        height: calc(100%);
+    }
 
-#PlanOptStatus {
-}
+    #PlanOptStatus {
+        max-height: 150px;
+        /*width: 150px;*/
+    }
+
+    #PlanOptStatus {
+    }
 
 
 
 
-/**/
+    /**/
