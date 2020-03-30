@@ -444,3 +444,39 @@ introImg {
 }
 
 /**/
+
+/*Plan*/
+#PlanStatusLogo {
+    max-height: 150px;
+    /*width: 150px;*/
+}
+
+#PlanImg {
+    max-height: 300px;
+}
+
+#PlanAnimation {
+    max-height: 400px;
+}
+
+#AnimationContainer {
+    /*height: calc(50%);*/
+    /*max-height: calc(50%);*/
+}
+
+#PlanContainer {
+    height: calc(100%);
+}
+
+#PlanOptStatus {
+    max-height: 150px;
+    /*width: 150px;*/
+}
+
+#PlanOptStatus {
+}
+
+
+
+
+/**/
