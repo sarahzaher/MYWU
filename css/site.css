@@ -209,335 +209,360 @@ html, body {
     min-height: 100%;
 }
 .BodyWithFooterAndNav {
-    height: calc(100% - 208px);
+    height: calc(100% - 90px);
 }
-Main {
-    overflow-y: auto;
+@media (min-width: 768px) {
+    .BodyWithFooterAndNav {
+        height: calc(100% - 208px);
+    }
 }
+    Main {
+        overflow-y: auto;
+    }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 90px;
-    /*min-height: 80px;*/
-    line-height: 90px;
-    /*border-top: #e44d94 solid;*/
-    /*background-color: #f5f5f5;*/
-}
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 90px;
+        /*min-height: 80px;*/
+        line-height: 90px;
+        /*border-top: #e44d94 solid;*/
+        /*background-color: #f5f5f5;*/
+    }
 
-/*.btnOption2 {
+    /*.btnOption2 {
     font-weight: bold;
     background-color: #e0c5d8;
     font-style: inherit;
 }*/
 
-/*
+    /*
     Color Ref:
     Pink : #f49ac0
     Blue : #6ea2d1
     Orange: #f78c16
 */
 
-.btnOption1 {
-    font-weight: bold;
-    height: 50px;
-    width: 50px;
-    background-color: #e0c5d8;
-    font-style: inherit;
-}
-
-.LogoBlueBox {
-    background-color: #6ea2d1;
-    height: 69px;
-    width: 69px;
-    margin-left: 5px;
-}
-.LogoPinkBox {
-    background-color: #f49ac0;
-    height: 69px;
-    width: 69px;
-    margin-left: 5px;
-}
-.LogoOrangeBox {
-    background-color: #f78c16;
-    height: 69px;
-    width: 69px;
-    margin-left: 5px;
-}
-
-.zoom2:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.zoom2Perm {
-    transform: scale(1.1);
-    cursor: pointer;
-    border: #e44d94 solid;
-}
-
-.zoom:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.zoomPerm {
-    transform: scale(1.2);
-    cursor: pointer;
-    border: #e44d94 solid;
-}
-
-/* NavBar*/
-.progress {
-    position: relative;
-    height: 25px;
-}
-
-    .progress > .progress-type {
-        position: absolute;
-        left: 0px;
-        font-weight: 800;
-        padding: 3px 30px 2px 10px;
-        color: rgb(255, 255, 255);
-        background-color: rgba(25, 25, 25, 0.2);
+    .btnOption1 {
+        font-weight: bold;
+        height: 50px;
+        width: 50px;
+        background-color: #e0c5d8;
+        font-style: inherit;
     }
 
-    .progress > .progress-completed {
-        position: absolute;
-        right: 0px;
-        font-weight: 800;
-        padding: 3px 10px 2px;
+    .LogoBlueBox {
+        background-color: #6ea2d1;
+        height: 69px;
+        width: 69px;
+        margin-left: 5px;
     }
 
-.step {
-    text-align: center;
-}
-
-    .step .col-md-2 {
-        background-color: #fff;
-        border: 1px solid #C0C0C0;
-        border-right: none;
+    .LogoPinkBox {
+        background-color: #f49ac0;
+        height: 69px;
+        width: 69px;
+        margin-left: 5px;
     }
 
-        .step .col-md-2:last-child {
+    .LogoOrangeBox {
+        background-color: #f78c16;
+        height: 69px;
+        width: 69px;
+        margin-left: 5px;
+    }
+
+    .zoom2:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .zoom2Perm {
+        transform: scale(1.1);
+        cursor: pointer;
+        border: #e44d94 solid;
+    }
+
+    .zoom:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .zoomPerm {
+        transform: scale(1.2);
+        cursor: pointer;
+        border: #e44d94 solid;
+    }
+
+    #MainLogo {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        #MainLogo {
+            display: flex;
+            width: 150px;
+            float: left;
+            position: absolute;
+        }
+    }
+    /* NavBar*/
+    .progress {
+        position: relative;
+        height: 25px;
+    }
+
+        .progress > .progress-type {
+            position: absolute;
+            left: 0px;
+            font-weight: 800;
+            padding: 3px 30px 2px 10px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(25, 25, 25, 0.2);
+        }
+
+        .progress > .progress-completed {
+            position: absolute;
+            right: 0px;
+            font-weight: 800;
+            padding: 3px 10px 2px;
+        }
+
+    .step {
+        text-align: center;
+    }
+
+        .step .col-md-2 {
+            background-color: #fff;
             border: 1px solid #C0C0C0;
+            border-right: none;
         }
 
-        .step .col-md-2:first-child {
-            border-radius: 5px 0 0 5px;
-        }
+            .step .col-md-2:last-child {
+                border: 1px solid #C0C0C0;
+            }
 
-        .step .col-md-2:last-child {
-            border-radius: 0 5px 5px 0;
-        }
+            .step .col-md-2:first-child {
+                border-radius: 5px 0 0 5px;
+            }
 
-        .step .col-md-2:hover {
+            .step .col-md-2:last-child {
+                border-radius: 0 5px 5px 0;
+            }
+
+            .step .col-md-2:hover {
+                color: #e44d94;
+                cursor: pointer;
+            }
+
+        .step .activestep {
             color: #e44d94;
-            cursor: pointer;
+            height: 100px;
+            margin-top: -7px;
+            padding-top: 7px;
+            border-left: 6px solid #6ea2d1 !important;
+            border-right: 6px solid #6ea2d1 !important;
+            border-top: 3px solid #6ea2d1 !important;
+            border-bottom: 3px solid #6ea2d1 !important;
+            vertical-align: central;
         }
 
-    .step .activestep {
-        color: #e44d94;
-        height: 100px;
-        margin-top: -7px;
-        padding-top: 7px;
-        border-left: 6px solid #6ea2d1 !important;
-        border-right: 6px solid #6ea2d1 !important;
-        border-top: 3px solid #6ea2d1 !important;
-        border-bottom: 3px solid #6ea2d1 !important;
-        vertical-align: central;
+        .step .fa {
+            padding-top: 15px;
+            font-size: 40px;
+        }
+    /*  end of navbar     */
+
+    /* Welcome Page  */
+
+    #btnStart {
+        height: 90px;
     }
 
-    .step .fa {
-        padding-top: 15px;
-        font-size: 40px;
+
+
+
+
+
+
+    /* End of welcome Page*/
+    /*  intro section  */
+    introImg {
+        height: 300px;
     }
-/*  end of navbar     */
 
-/* Welcome Page  */
-
-#btnStart {
-    height: 90px;
-}
-
-
-
-
-
-
-
-/* End of welcome Page*/
-/*  intro section  */
-introImg {
-    height: 300px;
-}
-
-@media (min-width: 768px) {
-    .introImg {
-        height: 170px;
+    @media (min-width: 768px) {
+        .introImg {
+            height: 170px;
+        }
     }
-}
 
-#FirstRow {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+    #FirstRow {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
-#thridRow {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+    #thridRow {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
-.columnSeparator {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-@media (min-width: 768px) {
     .columnSeparator {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
-}
 
-/*  End of intro section  */
+    @media (min-width: 768px) {
+        .columnSeparator {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
 
-/*  UserInput Section  */
-#UserInput #firstRow {
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
+    /*  End of intro section  */
 
-.userInputImg {
-    height: 120px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+    /*  UserInput Section  */
+    #UserInput #firstRow {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
 
-@media (min-width: 576px) {
     .userInputImg {
-        height: 150px;
+        height: 120px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-}
 
-@media (min-width: 768px) {
-    .userInputImg {
-        height: 170px;
+    @media (min-width: 576px) {
+        .userInputImg {
+            height: 150px;
+        }
     }
-}
-.userInputOptions {
-    font-size: xx-large;
-    height: 120px;
-    width:120px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-@media (min-width: 576px) {
+    @media (min-width: 768px) {
+        .userInputImg {
+            height: 170px;
+        }
+    }
+
     .userInputOptions {
-        height: 150px;
-        width:150px;
+        font-size: xx-large;
+        height: 120px;
+        width: 120px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-}
 
-@media (min-width: 768px) {
-    .userInputOptions {
-        height: 170px;
-        width:170px;
+    @media (min-width: 576px) {
+        .userInputOptions {
+            height: 150px;
+            width: 150px;
+        }
     }
-}
 
-/*  End of UserInput section  */
-/* Room Selector */
-#CustomRooms .heading {
-    height: 60px;
-}
-
-#CustomRooms .modelRow {
-    /*height: 50%;*/
-}
-@media (min-width: 768px) {
-    #CustomRooms .modelRowWithOptions {
-        height: calc(50% - 30px);
+    @media (min-width: 768px) {
+        .userInputOptions {
+            height: 170px;
+            width: 170px;
+        }
     }
-}
-@media (min-width: 768px) {
+
+    /*  End of UserInput section  */
+    /* Room Selector */
+    #CustomRooms .heading {
+        height: 60px;
+    }
+
     #CustomRooms .modelRow {
-        height: calc(50%);
+        /*height: 50%;*/
     }
-}
 
-.modelContainer {
-    height: calc(100% - 60px);
-}
+    @media (min-width: 768px) {
+        #CustomRooms .modelRowWithOptions {
+            height: calc(50% - 30px);
+        }
+    }
 
-.RoomObj {
-    max-height: 230px;
-}
+    @media (min-width: 768px) {
+        #CustomRooms .modelRow {
+            height: calc(50%);
+        }
+    }
 
-#CustomRooms #Controls {
-    height: 60px;
-    max-height: 60px;
-}
+    .modelContainer {
+        height: calc(100% - 60px);
+    }
 
-.btnRoomOption {
-    max-height: 50px;
-}
+    .RoomObj {
+        max-height: 230px;
+    }
 
-@media (min-width: 576px) {
+    #CustomRooms #Controls {
+        height: 60px;
+        max-height: 60px;
+    }
+
     .btnRoomOption {
-        /*height: 100%;*/
-    }
-}
-
-@media (min-width: 768px) {
-    .btnRoomOption {
-        /*height: 100%;*/
-    }
-}
-
-
-
-
-#CustomRooms .SelectedModelCountainer {
-    border: #e44d94 solid;
-}
-
-/*  End of room selector */
-/*Checkout*/
-@keyframes PriceAnimate {
-    0% {
-        transform: rotate(xx);
-        font-size: 0px;
+        max-height: 50px;
     }
 
-    100% {
-        transform: rotate(xx);
-        font-size: 80px;
+    @media (min-width: 576px) {
+        .btnRoomOption {
+            /*height: 100%;*/
+        }
     }
-}
 
-#Price {
-    animation: PriceAnimate 1s 1 0s ease;
-}
-#Price {
-    font-size: 60px;
-}
-
-@media (min-width: 768px) {
-#Price {
-        height: 80px;
+    @media (min-width: 768px) {
+        .btnRoomOption {
+            /*height: 100%;*/
+        }
     }
-}
-#Checkout img {
-    height: 150px;
-}
-@media (min-width: 768px) {
+
+
+
+
+    #CustomRooms .SelectedModelCountainer {
+        border: #e44d94 solid;
+    }
+
+    /*  End of room selector */
+    /*Checkout*/
+    @keyframes PriceAnimate {
+        0% {
+            transform: rotate(xx);
+            font-size: 0px;
+        }
+
+        100% {
+            transform: rotate(xx);
+            font-size: 80px;
+        }
+    }
+
+    #Price {
+        animation: PriceAnimate 1s 1 0s ease;
+    }
+
+    #Price {
+        font-size: 60px;
+    }
+
+    @media (min-width: 768px) {
+        #Price {
+            height: 80px;
+        }
+    }
+
     #Checkout img {
-        height: 200px;
+        height: 150px;
     }
-}
+
+    @media (min-width: 768px) {
+        #Checkout img {
+            height: 200px;
+        }
+    }
     /**/
 
     /*Plan*/
